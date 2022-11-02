@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+/*-------------Layout-------------*/
+body {
+  line-height: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+}
+
+#home {
+  background-color: #ddd;
+  background-image: linear-gradient(45deg, #A973BC, #FFD1D1 , #FFE3D9);
+}
+
+#about {
+  background-color: #ddd;
+}
+
+#work {
+  background-color: #888;
+}
+
+#contact {
+  background-color: #666;
+}
+
+/*-------------Nav-------------*/
+#nav-wrapper {
+  overflow: hidden;
+  width: 100%;
+  margin:4px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color:white;
+}
+
+#nav {
+  @include shadow-box;
+  display: flex;
+  flex-direction: column;
+  font-family: $headings-font;
+  height: 4em;
+  overflow: hidden;
+}
+
+.nav {
+  display: flex;
+  height: 4em;
+  line-height: 4em;
+  flex-grow: 1;
+}
+
+.nav-link,
+.logo {
+  padding: 0 1em;
+}
+
+h1.logo {
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 0.75em;
+  color: $color-neutral-lt;
+}
+.nav-link {
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 0.5px solid $color-neutral-med;
+  text-decoration:none;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+  #nav {
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .nav-link {
+    border-top: none;
+  }
+
+  .right {
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    left: 1.5em;
+    height: auto;
+  }
+
+  </style>
+</head>
+
+<body>
+  <header id="nav-wrapper">
+    <nav id="nav">
+      <div class="nav left">
+		<h1 class="logo"><a href="#home">Logo Here</a></h1>
+      <div class="nav right">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+
+    </section>
+    <section id="about">
+
+    </section>
+    <section id="work">
+
+    </section>
+    <section id="contact">
+
+    </section>
+  </main>
+
+</body>
+
+</html>
